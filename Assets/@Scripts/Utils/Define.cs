@@ -61,4 +61,35 @@ public class Define
 		//
 		Projectile = 20,
 	}
+
+    public enum ESkillType
+    {
+        ControllRadar,
+        SummonMonster,
+        ReduceTurn,
+        LockWeapon,
+    }
+
+    public enum EWeaponRangeType
+    {
+        None,
+        Short,
+        Middle,
+        Long
+    }
+
+    public enum EWeaponAttackType
+    {
+        Melee,
+        Range,
+        Trap,
+    }
+
+    public enum EKnockbackDirection
+    {
+        Front,
+        Back,
+        Clockwise,
+        AntiClockwise,
+    }
 }

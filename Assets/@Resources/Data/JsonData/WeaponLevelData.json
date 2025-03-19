@@ -1,0 +1,424 @@
+{
+  "weaponLevelInfos": [
+    {
+      "TableID": 1,
+      "Level": 1,
+      "Damage": 3,
+      "Exp": 2,
+      "Cost": 20
+    },
+    {
+      "TableID": 1,
+      "Level": 2,
+      "Damage": 4,
+      "Exp": 4,
+      "Cost": 40
+    },
+    {
+      "TableID": 1,
+      "Level": 3,
+      "Damage": 5,
+      "Exp": 6,
+      "Cost": 80
+    },
+    {
+      "TableID": 1,
+      "Level": 4,
+      "Damage": 6,
+      "Exp": 8,
+      "Cost": 120
+    },
+    {
+      "TableID": 1,
+      "Level": 5,
+      "Damage": 7,
+      "Exp": 10,
+      "Cost": 200
+    },
+    {
+      "TableID": 1,
+      "Level": 6,
+      "Damage": 9,
+      "Exp": 12,
+      "Cost": 400
+    },
+    {
+      "TableID": 1,
+      "Level": 7,
+      "Damage": 11,
+      "Exp": 15,
+      "Cost": 600
+    },
+    {
+      "TableID": 1,
+      "Level": 8,
+      "Damage": 13,
+      "Exp": 20,
+      "Cost": 800
+    },
+    {
+      "TableID": 1,
+      "Level": 9,
+      "Damage": 15,
+      "Exp": 25,
+      "Cost": 1000
+    },
+    {
+      "TableID": 1,
+      "Level": 10,
+      "Damage": 18,
+      "Exp": 30,
+      "Cost": 1500
+    },
+    {
+      "TableID": 1,
+      "Level": 11,
+      "Damage": 21,
+      "Exp": 35,
+      "Cost": 2000
+    },
+    {
+      "TableID": 1,
+      "Level": 12,
+      "Damage": 24,
+      "Exp": 40,
+      "Cost": 2500
+    },
+    {
+      "TableID": 1,
+      "Level": 13,
+      "Damage": 27,
+      "Exp": 45,
+      "Cost": 3000
+    },
+    {
+      "TableID": 1,
+      "Level": 14,
+      "Damage": 31,
+      "Exp": 50,
+      "Cost": 3500
+    },
+    {
+      "TableID": 1,
+      "Level": 15,
+      "Damage": 35,
+      "Exp": 55,
+      "Cost": 4000
+    },
+    {
+      "TableID": 1,
+      "Level": 16,
+      "Damage": 39,
+      "Exp": 60,
+      "Cost": 5000
+    },
+    {
+      "TableID": 1,
+      "Level": 17,
+      "Damage": 43,
+      "Exp": 65,
+      "Cost": 6000
+    },
+    {
+      "TableID": 1,
+      "Level": 18,
+      "Damage": 48,
+      "Exp": 70,
+      "Cost": 7000
+    },
+    {
+      "TableID": 1,
+      "Level": 19,
+      "Damage": 53,
+      "Exp": 75,
+      "Cost": 8000
+    },
+    {
+      "TableID": 1,
+      "Level": 20,
+      "Damage": 58,
+      "Exp": 80,
+      "Cost": 10000
+    },
+    {
+      "TableID": 2,
+      "Level": 1,
+      "Damage": 4,
+      "Exp": 2,
+      "Cost": 20
+    },
+    {
+      "TableID": 2,
+      "Level": 2,
+      "Damage": 5,
+      "Exp": 4,
+      "Cost": 40
+    },
+    {
+      "TableID": 2,
+      "Level": 3,
+      "Damage": 6,
+      "Exp": 6,
+      "Cost": 80
+    },
+    {
+      "TableID": 2,
+      "Level": 4,
+      "Damage": 8,
+      "Exp": 8,
+      "Cost": 120
+    },
+    {
+      "TableID": 2,
+      "Level": 5,
+      "Damage": 10,
+      "Exp": 10,
+      "Cost": 200
+    },
+    {
+      "TableID": 2,
+      "Level": 6,
+      "Damage": 12,
+      "Exp": 12,
+      "Cost": 400
+    },
+    {
+      "TableID": 2,
+      "Level": 7,
+      "Damage": 14,
+      "Exp": 15,
+      "Cost": 600
+    },
+    {
+      "TableID": 2,
+      "Level": 8,
+      "Damage": 17,
+      "Exp": 20,
+      "Cost": 800
+    },
+    {
+      "TableID": 2,
+      "Level": 9,
+      "Damage": 20,
+      "Exp": 25,
+      "Cost": 1000
+    },
+    {
+      "TableID": 2,
+      "Level": 10,
+      "Damage": 23,
+      "Exp": 30,
+      "Cost": 1500
+    },
+    {
+      "TableID": 2,
+      "Level": 11,
+      "Damage": 26,
+      "Exp": 35,
+      "Cost": 2000
+    },
+    {
+      "TableID": 2,
+      "Level": 12,
+      "Damage": 30,
+      "Exp": 40,
+      "Cost": 2500
+    },
+    {
+      "TableID": 2,
+      "Level": 13,
+      "Damage": 34,
+      "Exp": 45,
+      "Cost": 3000
+    },
+    {
+      "TableID": 2,
+      "Level": 14,
+      "Damage": 38,
+      "Exp": 50,
+      "Cost": 3500
+    },
+    {
+      "TableID": 2,
+      "Level": 15,
+      "Damage": 42,
+      "Exp": 55,
+      "Cost": 4000
+    },
+    {
+      "TableID": 2,
+      "Level": 16,
+      "Damage": 47,
+      "Exp": 60,
+      "Cost": 5000
+    },
+    {
+      "TableID": 2,
+      "Level": 17,
+      "Damage": 52,
+      "Exp": 65,
+      "Cost": 6000
+    },
+    {
+      "TableID": 2,
+      "Level": 18,
+      "Damage": 57,
+      "Exp": 70,
+      "Cost": 7000
+    },
+    {
+      "TableID": 2,
+      "Level": 19,
+      "Damage": 62,
+      "Exp": 75,
+      "Cost": 8000
+    },
+    {
+      "TableID": 2,
+      "Level": 20,
+      "Damage": 68,
+      "Exp": 80,
+      "Cost": 10000
+    },
+    {
+      "TableID": 3,
+      "Level": 1,
+      "Damage": 5,
+      "Exp": 2,
+      "Cost": 20
+    },
+    {
+      "TableID": 3,
+      "Level": 2,
+      "Damage": 6,
+      "Exp": 4,
+      "Cost": 40
+    },
+    {
+      "TableID": 3,
+      "Level": 3,
+      "Damage": 8,
+      "Exp": 6,
+      "Cost": 80
+    },
+    {
+      "TableID": 3,
+      "Level": 4,
+      "Damage": 10,
+      "Exp": 8,
+      "Cost": 120
+    },
+    {
+      "TableID": 3,
+      "Level": 5,
+      "Damage": 12,
+      "Exp": 10,
+      "Cost": 200
+    },
+    {
+      "TableID": 3,
+      "Level": 6,
+      "Damage": 15,
+      "Exp": 12,
+      "Cost": 400
+    },
+    {
+      "TableID": 3,
+      "Level": 7,
+      "Damage": 18,
+      "Exp": 15,
+      "Cost": 600
+    },
+    {
+      "TableID": 3,
+      "Level": 8,
+      "Damage": 21,
+      "Exp": 20,
+      "Cost": 800
+    },
+    {
+      "TableID": 3,
+      "Level": 9,
+      "Damage": 24,
+      "Exp": 25,
+      "Cost": 1000
+    },
+    {
+      "TableID": 3,
+      "Level": 10,
+      "Damage": 29,
+      "Exp": 30,
+      "Cost": 1500
+    },
+    {
+      "TableID": 3,
+      "Level": 11,
+      "Damage": 34,
+      "Exp": 35,
+      "Cost": 2000
+    },
+    {
+      "TableID": 3,
+      "Level": 12,
+      "Damage": 39,
+      "Exp": 40,
+      "Cost": 2500
+    },
+    {
+      "TableID": 3,
+      "Level": 13,
+      "Damage": 44,
+      "Exp": 45,
+      "Cost": 3000
+    },
+    {
+      "TableID": 3,
+      "Level": 14,
+      "Damage": 50,
+      "Exp": 50,
+      "Cost": 3500
+    },
+    {
+      "TableID": 3,
+      "Level": 15,
+      "Damage": 56,
+      "Exp": 55,
+      "Cost": 4000
+    },
+    {
+      "TableID": 3,
+      "Level": 16,
+      "Damage": 62,
+      "Exp": 60,
+      "Cost": 5000
+    },
+    {
+      "TableID": 3,
+      "Level": 17,
+      "Damage": 68,
+      "Exp": 65,
+      "Cost": 6000
+    },
+    {
+      "TableID": 3,
+      "Level": 18,
+      "Damage": 75,
+      "Exp": 70,
+      "Cost": 7000
+    },
+    {
+      "TableID": 3,
+      "Level": 19,
+      "Damage": 82,
+      "Exp": 75,
+      "Cost": 8000
+    },
+    {
+      "TableID": 3,
+      "Level": 20,
+      "Damage": 90,
+      "Exp": 80,
+      "Cost": 10000
+    }
+  ]
+}

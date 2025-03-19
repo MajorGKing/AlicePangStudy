@@ -1,0 +1,52 @@
+{
+  "bossSkills": [
+    {
+      "BossID": 1,
+      "SkillID": 0,
+      "Cooltime": 1,
+      "MonsterCount": 0,
+      "Value": 0,
+      "Turn": 0
+    },
+    {
+      "BossID": 2,
+      "SkillID": 1,
+      "Cooltime": 1,
+      "MonsterCount": 5,
+      "Value": 5,
+      "Turn": 5
+    },
+    {
+      "BossID": 3,
+      "SkillID": 1,
+      "Cooltime": 1,
+      "MonsterCount": 5,
+      "Value": 5,
+      "Turn": 5
+    },
+    {
+      "BossID": 4,
+      "SkillID": 2,
+      "Cooltime": 1,
+      "MonsterCount": 5,
+      "Value": 5,
+      "Turn": 5
+    },
+    {
+      "BossID": 5,
+      "SkillID": 1,
+      "Cooltime": 1,
+      "MonsterCount": 5,
+      "Value": 5,
+      "Turn": 5
+    },
+    {
+      "BossID": 6,
+      "SkillID": 3,
+      "Cooltime": 1,
+      "MonsterCount": 5,
+      "Value": 5,
+      "Turn": 5
+    }
+  ]
+}

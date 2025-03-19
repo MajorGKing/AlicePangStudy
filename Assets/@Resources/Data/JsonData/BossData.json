@@ -1,0 +1,52 @@
+{
+  "bosses": [
+    {
+      "TemplateID": 1,
+      "NameID": "Rabbit",
+      "Prefab": "Boss1",
+      "SpriteID": "2",
+      "Hp": 100,
+      "Damage": 10,
+      "MoveTurn": 1,
+      "MoveSpeed": 1,
+      "AttackRange": 1,
+      "DropCoin": 1,
+      "UseSkillAnimationDuration": 3.1,
+      "PositionY": 3.5,
+      "EffectSound": "None",
+      "bossSkillData": []
+    },
+    {
+      "TemplateID": 2,
+      "NameID": "Door",
+      "Prefab": "Boss2",
+      "SpriteID": "3",
+      "Hp": 100,
+      "Damage": 20,
+      "MoveTurn": 2,
+      "MoveSpeed": 1,
+      "AttackRange": 1,
+      "DropCoin": 1,
+      "UseSkillAnimationDuration": 2.0,
+      "PositionY": 6.271,
+      "EffectSound": "None",
+      "bossSkillData": []
+    },
+    {
+      "TemplateID": 3,
+      "NameID": "Spider",
+      "Prefab": "Boss3",
+      "SpriteID": "1",
+      "Hp": 100,
+      "Damage": 30,
+      "MoveTurn": 3,
+      "MoveSpeed": 1,
+      "AttackRange": 1,
+      "DropCoin": 1,
+      "UseSkillAnimationDuration": 2.0,
+      "PositionY": 7.0,
+      "EffectSound": "None",
+      "bossSkillData": []
+    }
+  ]
+}

@@ -1,0 +1,1196 @@
+{
+  "respawns": [
+    {
+      "RespawnID": 1,
+      "MonsterID": 1,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 1,
+      "MonsterID": 2,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 2,
+      "MonsterID": 3,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 2,
+      "MonsterID": 4,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 2,
+      "MonsterID": 5,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 3,
+      "MonsterID": 6,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 3,
+      "MonsterID": 7,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 3,
+      "MonsterID": 8,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 4,
+      "MonsterID": 9,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 4,
+      "MonsterID": 10,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 4,
+      "MonsterID": 11,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 5,
+      "MonsterID": 12,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 5,
+      "MonsterID": 13,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 5,
+      "MonsterID": 14,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 5,
+      "MonsterID": 15,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 6,
+      "MonsterID": 16,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 6,
+      "MonsterID": 17,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 6,
+      "MonsterID": 18,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 6,
+      "MonsterID": 19,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 7,
+      "MonsterID": 20,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 7,
+      "MonsterID": 21,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 7,
+      "MonsterID": 22,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 7,
+      "MonsterID": 23,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 8,
+      "MonsterID": 24,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 8,
+      "MonsterID": 25,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 8,
+      "MonsterID": 26,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 8,
+      "MonsterID": 27,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 9,
+      "MonsterID": 28,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 9,
+      "MonsterID": 29,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 9,
+      "MonsterID": 30,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 9,
+      "MonsterID": 31,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 10,
+      "MonsterID": 32,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 10,
+      "MonsterID": 33,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 10,
+      "MonsterID": 34,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 10,
+      "MonsterID": 35,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 11,
+      "MonsterID": 36,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 11,
+      "MonsterID": 37,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 11,
+      "MonsterID": 38,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 11,
+      "MonsterID": 39,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 12,
+      "MonsterID": 40,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 12,
+      "MonsterID": 41,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 12,
+      "MonsterID": 42,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 12,
+      "MonsterID": 43,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 13,
+      "MonsterID": 44,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 13,
+      "MonsterID": 45,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 13,
+      "MonsterID": 46,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 13,
+      "MonsterID": 47,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 14,
+      "MonsterID": 48,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 14,
+      "MonsterID": 49,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 14,
+      "MonsterID": 50,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 14,
+      "MonsterID": 51,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 15,
+      "MonsterID": 52,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 15,
+      "MonsterID": 53,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 15,
+      "MonsterID": 54,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 15,
+      "MonsterID": 55,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 16,
+      "MonsterID": 56,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 16,
+      "MonsterID": 57,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 16,
+      "MonsterID": 58,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 16,
+      "MonsterID": 59,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 17,
+      "MonsterID": 60,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 17,
+      "MonsterID": 61,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 17,
+      "MonsterID": 62,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 17,
+      "MonsterID": 63,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 18,
+      "MonsterID": 64,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 18,
+      "MonsterID": 65,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 18,
+      "MonsterID": 66,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 18,
+      "MonsterID": 67,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 19,
+      "MonsterID": 68,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 19,
+      "MonsterID": 69,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 19,
+      "MonsterID": 70,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 19,
+      "MonsterID": 71,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 20,
+      "MonsterID": 72,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 20,
+      "MonsterID": 73,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 20,
+      "MonsterID": 74,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 20,
+      "MonsterID": 75,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 5,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 21,
+      "MonsterID": 76,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 21,
+      "MonsterID": 77,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 22,
+      "MonsterID": 78,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 22,
+      "MonsterID": 79,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 22,
+      "MonsterID": 80,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 1
+    },
+    {
+      "RespawnID": 23,
+      "MonsterID": 81,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 23,
+      "MonsterID": 82,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 23,
+      "MonsterID": 83,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 10,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 24,
+      "MonsterID": 84,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 24,
+      "MonsterID": 85,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 24,
+      "MonsterID": 86,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 10,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 25,
+      "MonsterID": 87,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 25,
+      "MonsterID": 88,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 25,
+      "MonsterID": 89,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 26,
+      "MonsterID": 90,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 26,
+      "MonsterID": 91,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 26,
+      "MonsterID": 92,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 26,
+      "MonsterID": 93,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 27,
+      "MonsterID": 94,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 27,
+      "MonsterID": 95,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 27,
+      "MonsterID": 96,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 27,
+      "MonsterID": 97,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 28,
+      "MonsterID": 98,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 28,
+      "MonsterID": 99,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 5
+    },
+    {
+      "RespawnID": 28,
+      "MonsterID": 100,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 28,
+      "MonsterID": 101,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 29,
+      "MonsterID": 102,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 29,
+      "MonsterID": 103,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 29,
+      "MonsterID": 104,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 29,
+      "MonsterID": 105,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 30,
+      "MonsterID": 106,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 30,
+      "MonsterID": 107,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 30,
+      "MonsterID": 108,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 30,
+      "MonsterID": 109,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 31,
+      "MonsterID": 110,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 31,
+      "MonsterID": 111,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 31,
+      "MonsterID": 112,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 31,
+      "MonsterID": 113,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 32,
+      "MonsterID": 114,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 32,
+      "MonsterID": 115,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 32,
+      "MonsterID": 116,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 32,
+      "MonsterID": 117,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 33,
+      "MonsterID": 118,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 33,
+      "MonsterID": 119,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 33,
+      "MonsterID": 120,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 33,
+      "MonsterID": 121,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 34,
+      "MonsterID": 122,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 34,
+      "MonsterID": 123,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 34,
+      "MonsterID": 124,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 34,
+      "MonsterID": 125,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 35,
+      "MonsterID": 126,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 35,
+      "MonsterID": 127,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 35,
+      "MonsterID": 128,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 35,
+      "MonsterID": 129,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 36,
+      "MonsterID": 130,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 36,
+      "MonsterID": 131,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 36,
+      "MonsterID": 132,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 36,
+      "MonsterID": 133,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 37,
+      "MonsterID": 134,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 12
+    },
+    {
+      "RespawnID": 37,
+      "MonsterID": 135,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 37,
+      "MonsterID": 136,
+      "SummonPoint": 5,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 37,
+      "MonsterID": 137,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 38,
+      "MonsterID": 138,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 38,
+      "MonsterID": 139,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 38,
+      "MonsterID": 140,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 38,
+      "MonsterID": 141,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 39,
+      "MonsterID": 142,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 8
+    },
+    {
+      "RespawnID": 39,
+      "MonsterID": 143,
+      "SummonPoint": 4,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 2
+    },
+    {
+      "RespawnID": 39,
+      "MonsterID": 144,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 39,
+      "MonsterID": 145,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 4
+    },
+    {
+      "RespawnID": 40,
+      "MonsterID": 146,
+      "SummonPoint": 0,
+      "MinPoint": 0,
+      "MaxPoint": 0,
+      "ClearCount": 0
+    },
+    {
+      "RespawnID": 40,
+      "MonsterID": 147,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 8,
+      "ClearCount": 6
+    },
+    {
+      "RespawnID": 40,
+      "MonsterID": 148,
+      "SummonPoint": 3,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 3
+    },
+    {
+      "RespawnID": 40,
+      "MonsterID": 149,
+      "SummonPoint": 2,
+      "MinPoint": 2,
+      "MaxPoint": 6,
+      "ClearCount": 2
+    }
+  ]
+}

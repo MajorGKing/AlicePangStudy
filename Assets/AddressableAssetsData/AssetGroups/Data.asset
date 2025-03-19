@@ -16,7 +16,61 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 9a3b2525873b55c458754d88c665857e
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: a17c9183baa51644d82858e8b32ae0ce
+    m_Address: TextData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ecdde2210ae85647be47bbc1447ee21
+    m_Address: StageData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 476ae0d013e2a0c43abf9dbae8d14ba4
+    m_Address: RespawnData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01c8a7fba29b52647b660a82ab82cafd
+    m_Address: MonsterData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0656240615112604ca4e37b7c73b6122
+    m_Address: ChapterResourceData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 733c4bf86195ece4f8c99823b2797c79
+    m_Address: BossSkillData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d45b66b762bfda4a83d5604d3a51400
+    m_Address: BossData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ce9918f4bbf93246b53aef8453b5da8
+    m_Address: WeaponData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 23b4c60dfccbc0f4887b7c48baba0835
+    m_Address: WeaponLevelData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9094f0f0595c6e147aa68a6f81e2dcaf, type: 2}
   m_SchemaSet:

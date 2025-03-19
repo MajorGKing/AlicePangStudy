@@ -26,12 +26,21 @@ public class DataTransformer : EditorWindow
     [MenuItem("Tools/ParseExcel _F4")]  // 추가 단축키: Control + K
     public static void ParseExcelDataToJson()
     {
+        ParseExcelDataToJson<BossDataLoader, BossData>("Boss");
+        ParseExcelDataToJson<BossSkillDataLoader, BossSkillData>("BossSkill");
+        ParseExcelDataToJson<ChapterResourceDataLoader, ChapterResourceData>("ChapterResource");
+        ParseExcelDataToJson<MonsterDataLoader, MonsterData>("Monster");
+        ParseExcelDataToJson<RespawnInfoDataLoader, RespawnInfoData>("Respawn");
+        ParseExcelDataToJson<StageDataLoader, StageData>("Stage");
+        ParseExcelDataToJson<TextDataLoader, TextData>("Text");
+        ParseExcelDataToJson<WeaponDataLoader, WeaponData>("Weapon");
+        ParseExcelDataToJson<WeaponLevelInfoDataLoader, WeaponLevelInfoData>("WeaponLevel");
         // ParseTextData("Text");
-		// ParseWeaponData("Weapon");
-		// ParseMonsterData("Monster");
-		// ParseStageData("Stage");
-		// ParseBossData("Boss");
-		// ParseChapterResourceData("ChapterResource");
+        // ParseWeaponData("Weapon");
+        // ParseMonsterData("Monster");
+        // ParseStageData("Stage");
+        // ParseBossData("Boss");
+        // ParseChapterResourceData("ChapterResource");
         Debug.Log("Complete DataTransformer");
     }
 
@@ -277,6 +286,8 @@ public class DataTransformer : EditorWindow
             {
                 if (fieldNames.Add(field.Name))
                 {
+                    if (field.GetCustomAttribute<ExcludeFieldAttribute>() != null)
+                        continue;
                     fields.Add(field);
                 }
             }

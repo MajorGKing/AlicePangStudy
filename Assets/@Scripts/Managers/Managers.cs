@@ -91,7 +91,7 @@ public class Managers : MonoBehaviour
         }		
 	}
 
-	public void Update()
+    public void Update()
 	{
 		_network?.Update();
 	}
