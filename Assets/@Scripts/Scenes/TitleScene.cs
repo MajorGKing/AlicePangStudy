@@ -1,11 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using Google.Protobuf.Protocol;
 using UnityEngine;
-using UnityEngine.Diagnostics;
 using UnityEngine.Rendering;
+using Object = UnityEngine.Object;
 
 public class TitleScene : BaseScene
 {
@@ -29,6 +24,8 @@ public class TitleScene : BaseScene
 		//IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777);
 		//Managers.Network.GameServer.Connect(endPoint);
 		//CoSendTestPackets();
+
+		
 	}
 
 	public override void Clear()
