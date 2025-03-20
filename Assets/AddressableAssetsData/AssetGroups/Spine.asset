@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Spine
+  m_EditorClassIdentifier: 
+  m_GroupName: Spine
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 488696da634204985b0f4bf6f4f8dadd
+  m_SerializeEntries:
+  - m_GUID: fd28a7150b894cc4fb4966019d8a9468
+    m_Address: map3_ani_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a58b6492974a5644cb0f6bdccf0b4d09
+    m_Address: map2_ani_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e1032077a89ff24da5986eba2b16f00
+    m_Address: map1_ani_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c1c5994d6eecb349bbfa3d7fb431a0a
+    m_Address: map4_ani_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cad82bbb0748cc49a4c741adf65ab8f
+    m_Address: map5_ani_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3790c805ffd6a6344a4a857e36d62825
+    m_Address: map6_ani_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9094f0f0595c6e147aa68a6f81e2dcaf, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 709a7b63b00554416ad45fd8455f635e, type: 2}
+    - {fileID: 11400000, guid: 3f28e967c657447e6a71b9e06e23acc1, type: 2}

@@ -16,7 +16,151 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 6855a303d91ea534cad059887528a9c1
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 6663efade9c1225489fb16d1f0430461
+    m_Address: Bird
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75e2741a7becf2449aab583676653376
+    m_Address: Boss_Chapter5
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0932d98efeb582b42bef8afcb18faf2d
+    m_Address: Boss_Chapter4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 343e9f30117713e4cbb40ea59be94c54
+    m_Address: Boss_Chapter2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ef40a90e1c52044da1015cc59d27acd
+    m_Address: Boss_Chapter3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f78b3be3374dc4439b109691a058910
+    m_Address: Boss_Chapter1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5270d69e0b81bc4f8ace4d4acf607ea
+    m_Address: Boss_Chapter6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4463d04946e077445b11867cf998cb33
+    m_Address: Paper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b505693fad3d1ed4592d620c2ff37e65
+    m_Address: BossCat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 374372b1cec702f4da828a36be7a0507
+    m_Address: BossBird
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9035342bcc6a1e34c9cc110f35313170
+    m_Address: Flower_WhiteTulip
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88d2058fff300fc46a6faa17af829cac
+    m_Address: BossPaper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04df27e72d2215e448954af89d303cf6
+    m_Address: Cat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 128cd4e973053c748bc99ff35b3cccb0
+    m_Address: Player
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2594e4a6ee459a46b45a0f00ba174f2
+    m_Address: Monster
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b233ae44b9a1834aabf1d5f5152da27
+    m_Address: projectile_12
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6448a3e321c0b642a136c94b135f449
+    m_Address: projectile_14
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e40d644239269e478197d9f5bb62937
+    m_Address: projectile_20
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a37b562f38ff7a4091ab0628a9df146
+    m_Address: projectile_11
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10e5097255ccf9b4b8b8ccb05ad78145
+    m_Address: Coin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5395281e0c34ee24e96354091f8eaacf
+    m_Address: projectile_18
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 780223dc8f9aa0844a053d3f7d8bbfe6
+    m_Address: projectile_13
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c89ca995181d8e34296669018ad42d32
+    m_Address: projectile_19
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70def462ccb6a3641a499d3e2732b9fc
+    m_Address: DamageText
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9094f0f0595c6e147aa68a6f81e2dcaf, type: 2}
   m_SchemaSet:
