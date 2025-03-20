@@ -28,7 +28,7 @@ public class DataManager
     public Dictionary<string, TextData> Texts { get; private set; }
     public Dictionary<int, WeaponData> Weapons { get; private set; }
     public Dictionary<int, WeaponLevelInfoData> WeaponLevelInfoDatas { get; private set; }
-    public Dictionary<int, List<WeaponLevelData>> WeaponLevelInfosDic { get; private set; }
+    public Dictionary<int, List<WeaponLevelData>> WeaponLevelInfosDic { get; private set; } = new Dictionary<int, List<WeaponLevelData>>();
 
     public void Init()
     {
