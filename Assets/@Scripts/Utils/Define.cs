@@ -13,6 +13,7 @@ public class Define
         Unknown,
         TitleScene,
         GameScene,
+        SelectStageScene,
     }
 
     public enum ESound
