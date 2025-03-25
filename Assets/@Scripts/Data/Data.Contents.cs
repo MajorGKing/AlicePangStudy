@@ -248,7 +248,6 @@ namespace Data
             int i = 0;
             foreach (RespawnInfoData respawn in respawns)
             {
-                Debug.Log("Add respawn : " + i);
                 dic.Add(i, respawn);
                 i++;
             }
