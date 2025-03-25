@@ -69,7 +69,7 @@ public class UI_TitleScene : UI_Scene
 		GetObject((int)GameObjects.BG).BindEvent((evt) =>
 		{
 			Debug.Log("OnClick");
-			Managers.Scene.LoadScene(EScene.GameScene);
+			Managers.Scene.LoadScene(EScene.SelectStageScene);
 		});
 
 		GetObject((int)GameObjects.BG).gameObject.SetActive(false);
@@ -85,6 +85,7 @@ public class UI_TitleScene : UI_Scene
 		Managers.Resource.LoadAllAsync<Object>("Preload", (key, count, totalCount) =>
 		{
 			GetText((int)Texts.StartText).text = $"TODO Load : {key} {count}/{totalCount}";
+			Debug.Log($"TODO Load : {key} {count}/{totalCount}");
 
 			if (count == totalCount)
 			{

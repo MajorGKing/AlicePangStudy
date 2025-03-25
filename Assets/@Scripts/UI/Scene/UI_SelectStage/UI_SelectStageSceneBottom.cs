@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI_SelectStageSceneBottom : MonoBehaviour
+public class UI_SelectStageSceneBottom : UI_Base
 {
-    // Start is called before the first frame update
-    void Start()
+    enum Buttons
     {
-        
+        InventoryButton,
+        PlayButton,
+        ShopButton,
     }
 
-    // Update is called once per frame
-    void Update()
+    UI_SelectStageScene _selectStageSceneUI;
+
+    protected override void Awake()
     {
-        
+        base.Awake();
+    }
+
+    public void SetInfo(UI_SelectStageScene sceneUI)
+    {
+        _selectStageSceneUI = sceneUI;
     }
 }

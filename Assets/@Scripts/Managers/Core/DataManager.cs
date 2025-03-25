@@ -9,10 +9,9 @@ public interface IValidate
     bool Validate();
 }
 
-public interface ILoader<Key, Value>
+public interface ILoader<Key, Value> : IValidate
 {
     Dictionary<Key, Value> MakeDict();
-    bool Validate();
 }
 
 public class DataManager
@@ -23,7 +22,7 @@ public class DataManager
     public Dictionary<int, ChapterResourceData> ChapterResources { get; private set; }
     public Dictionary<int, MonsterData> Monsters { get; private set; }
     public Dictionary<int, RespawnInfoData> RespawnInfosDic { get; private set; }
-    public List<RespawnInfoData> RespawnInfoDatas { get; private set; } = new List<RespawnInfoData>();
+    //public List<RespawnInfoData> RespawnInfoDatas { get; private set; } = new List<RespawnInfoData>();
     public Dictionary<int, StageData> Stages { get; private set; }
     public Dictionary<string, TextData> Texts { get; private set; }
     public Dictionary<int, WeaponData> Weapons { get; private set; }
@@ -53,26 +52,31 @@ public class DataManager
         }
 
         // Add respawnData in StageData
-        foreach(var stage in Stages.Values)
-        {
-            stage.respawnData = new List<RespawnData>();
+        //foreach(var info in RespawnInfosDic.Values)
+        //{
+        //    RespawnInfoDatas.Add(info);
+        //}
 
-            var respawnInfo = RespawnInfoDatas
-                .Where(respawn => respawn.RespawnID == stage.TemplateID)
-                .ToList();
+        //foreach (var stage in Stages.Values)
+        //{
+        //    stage.respawnData = new List<RespawnData>();
 
-            foreach(var info in respawnInfo)
-            {
-                stage.respawnData.Add(new RespawnData
-                {
-                    MonsterID = info.MonsterID,
-                    SummonPoint = info.SummonPoint,
-                    MinPoint = info.MinPoint,
-                    MaxPoint = info.MaxPoint,
-                    ClearCount = info.ClearCount
-                });
-            }
-        }
+        //    var respawnInfo = RespawnInfoDatas
+        //        .Where(respawn => respawn.RespawnID == stage.StageID)
+        //        .ToList();
+
+        //    foreach(var info in respawnInfo)
+        //    {
+        //        stage.respawnData.Add(new RespawnData
+        //        {
+        //            MonsterID = info.MonsterID,
+        //            SummonPoint = info.SummonPoint,
+        //            MinPoint = info.MinPoint,
+        //            MaxPoint = info.MaxPoint,
+        //            ClearCount = info.ClearCount
+        //        });
+        //    }
+        //}
 
         // Add WeaponLevelInfo in Weapons
         foreach(var info in WeaponLevelInfoDatas.Values)
@@ -115,8 +119,10 @@ public class DataManager
     private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>
     {
 		TextAsset textAsset = Managers.Resource.Load<TextAsset>($"{path}");
-        return JsonConvert.DeserializeObject<Loader>(textAsset.text);
-	}
+        Loader loader = JsonConvert.DeserializeObject<Loader>(textAsset.text);
+        _loaders.Add(loader);
+        return loader;
+    }
 
     private bool Validate()
     {

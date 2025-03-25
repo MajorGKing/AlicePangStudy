@@ -2,17 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI_SelectStageSceneTop : MonoBehaviour
+public class UI_SelectStageSceneTop : UI_Base
 {
-    // Start is called before the first frame update
-    void Start()
+    enum Texts
     {
-        
+        CoinText,
+        DiaText,
     }
 
-    // Update is called once per frame
-    void Update()
+    enum Buttons
     {
-        
+        CoinPlusButton,
+        DiaPlusButton,
+    }
+
+    UI_SelectStageScene _selectStageSceneUI;
+
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+
+    }
+
+    public void SetInfo(UI_SelectStageScene sceneUI)
+    {
+        _selectStageSceneUI = sceneUI;
+        Refresh();
+    }
+
+    public void Refresh()
+    {
+
     }
 }

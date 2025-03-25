@@ -10,8 +10,11 @@ public abstract class UI_Base : MonoBehaviour
 {
     protected Dictionary<Type, Object[]> _objects = new Dictionary<Type, Object[]>();
 
+    protected bool _init;
+
     protected virtual void Awake()
     {
+        _init = true;
     }
 
 	protected virtual void Start()

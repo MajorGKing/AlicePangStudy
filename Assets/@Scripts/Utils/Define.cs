@@ -93,4 +93,8 @@ public class Define
         Clockwise,
         AntiClockwise,
     }
+
+    public const int WEAPON_COUNT = 26;
+
+    public const int DAILY_QUEST_COUNT = 5;
 }

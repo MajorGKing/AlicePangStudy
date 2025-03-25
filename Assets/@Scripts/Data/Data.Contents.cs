@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -247,6 +248,7 @@ namespace Data
             int i = 0;
             foreach (RespawnInfoData respawn in respawns)
             {
+                Debug.Log("Add respawn : " + i);
                 dic.Add(i, respawn);
                 i++;
             }
@@ -256,10 +258,32 @@ namespace Data
 
         public bool Validate()
         {
-            foreach(var respawn in respawns)
+            //foreach (var respawn in respawns)
+            //{
+            //    Managers.Data.RespawnInfoDatas.Add(respawn);
+            //}
+
+            foreach (var stage in Managers.Data.Stages.Values)
             {
-                Managers.Data.RespawnInfoDatas.Add(respawn);
+                stage.respawnData = new List<RespawnData>();
+
+                var respawnInfo = respawns
+                    .Where(respawn => respawn.RespawnID == stage.StageID)
+                    .ToList();
+
+                foreach (var info in respawnInfo)
+                {
+                    stage.respawnData.Add(new RespawnData
+                    {
+                        MonsterID = info.MonsterID,
+                        SummonPoint = info.SummonPoint,
+                        MinPoint = info.MinPoint,
+                        MaxPoint = info.MaxPoint,
+                        ClearCount = info.ClearCount
+                    });
+                }
             }
+            
             return true;
         }
     }
