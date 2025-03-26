@@ -123,8 +123,8 @@ public class UI_ShopPopup : UI_Popup
         GetObject((int)GameObjects.Gacha1_Pressed).SetActive(false);
         GetObject((int)GameObjects.Gacha1_Normal).SetActive(true);
 
-        //var popup = Managers.UI.ShowPopupUI<UI_WeaponGachaPopup>();
-        //popup.SetInfo(10, GetObject((int)GameObjects.Block).SetActive(false));
+        var popup = Managers.UI.ShowPopupUI<UI_WeaponGachaPopup>();
+        popup.SetInfo(1, () => GetObject((int)GameObjects.Block).SetActive(false));
     }
 
     void OnPressGacha1_Button(PointerEventData evt)
@@ -154,8 +154,8 @@ public class UI_ShopPopup : UI_Popup
         GetObject((int)GameObjects.Gacha10_Pressed).SetActive(false);
         GetObject((int)GameObjects.Gacha10_Normal).SetActive(true);
 
-        //var popup = Managers.UI.ShowPopupUI<UI_WeaponGachaPopup>();
-        //popup.SetInfo(10, GetObject((int)GameObjects.Block).SetActive(false));
+        var popup = Managers.UI.ShowPopupUI<UI_WeaponGachaPopup>();
+        popup.SetInfo(10, () => GetObject((int)GameObjects.Block).SetActive(false));
     }
 
     void OnPressGacha10_Button(PointerEventData evt)

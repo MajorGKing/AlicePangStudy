@@ -51,7 +51,6 @@ public class UI_StoryPopup : UI_Popup
         while (true)
         {
             time += Time.deltaTime;
-            Debug.Log(time);
 
             if (time > 2f)
             {
@@ -110,7 +109,6 @@ public class UI_StoryPopup : UI_Popup
     #region EventHandler
     void OnClickSkipPanel(PointerEventData evt)
     {
-        Debug.Log("Click");
         if (_isComplete)
             NextSequence();
         else
