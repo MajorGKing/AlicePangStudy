@@ -37,6 +37,8 @@ public class UI_InventoryPopup : UI_Popup
     {
         base.Awake();
 
+        Managers.Sound.Play(Define.ESound.Effect, "Sound_Inventory");
+
         BindObjects(typeof(GameObjects));
         BindButtons(typeof(Buttons));
 
@@ -92,12 +94,38 @@ public class UI_InventoryPopup : UI_Popup
 
     public void SetInfo()
     {
+        _shortRangeWeaponTemplateID = Managers.Game.ShortRangeWeaponID;
+        _middleRangeWeaponTemplateID = Managers.Game.MiddleRangeWeaponID;
+        _longRangeWeaponTemplateID = Managers.Game.LongRangeWeaponID;
 
+        RefreshUI();
     }
 
     void RefreshUI()
     {
-        
+        if (_shortRangeWeaponItem.WeaponData != null)
+        {
+            int currentShortRangeWeaponTemplateID = _shortRangeWeaponItem.WeaponData.TemplateID;
+            _weaponInventoryItemUI[currentShortRangeWeaponTemplateID].gameObject.SetActive(true);
+        }
+        _shortRangeWeaponItem.SetInfo(Managers.Data.Weapons[_shortRangeWeaponTemplateID]);
+        _weaponInventoryItemUI[_shortRangeWeaponTemplateID].gameObject.SetActive(true);
+
+        if (_middleRangeWeaponItem.WeaponData != null)
+        {
+            int currentMiddleRangeWeaponTemplateID = _middleRangeWeaponItem.WeaponData.TemplateID;
+            _weaponInventoryItemUI[currentMiddleRangeWeaponTemplateID].gameObject.SetActive(true);
+        }
+        _middleRangeWeaponItem.SetInfo(Managers.Data.Weapons[_middleRangeWeaponTemplateID]);
+        _weaponInventoryItemUI[_middleRangeWeaponTemplateID].gameObject.SetActive(true);
+
+        if (_longRangeWeaponItem.WeaponData != null)
+        {
+            int currentLongRangeWeaponTemplateID = _longRangeWeaponItem.WeaponData.TemplateID;
+            _weaponInventoryItemUI[currentLongRangeWeaponTemplateID].gameObject.SetActive(true);
+        }
+        _longRangeWeaponItem.SetInfo(Managers.Data.Weapons[_longRangeWeaponTemplateID]);
+        _weaponInventoryItemUI[_longRangeWeaponTemplateID].gameObject.SetActive(true);
     }
 
     #region EventHandler
