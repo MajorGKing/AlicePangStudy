@@ -17,8 +17,8 @@ public class GameData
     public int Coin;
     public int Dia;
 
-    public int[] WeaponLevel = new int[WEAPON_COUNT];
-    public int[] WeaponExp = new int[WEAPON_COUNT];
+    public int[] WeaponLevel = new int[Define.WEAPON_COUNT];
+    public int[] WeaponExp = new int[Define.WEAPON_COUNT];
 
     public int ShortRangeWeaponID;
     public int MiddleRangeWeaponID;
@@ -30,7 +30,7 @@ public class GameData
     public bool BGMOn = true;
     public bool EffectSoundOn = true;
 
-    public int[] DailyQuestID = new int[DAILY_QUEST_COUNT];
+    public int[] DailyQuestID = new int[Define.DAILY_QUEST_COUNT];
     public int LastStoryID = -1;
 }
 
@@ -40,6 +40,48 @@ public class GameManager
     
     string _path;
     public bool IsLoaded = false;
+
+    public float ZRotation { get; set; }
+    public int CurrentStageGetCoin { get; set; }
+    public float RadarAngleSpeed { get; set; } = Define.RADAR_SPEED;
+    public event Action<Define.EWeaponRangeType> OnChangeWeapon;
+    Define.EWeaponRangeType _weaponType = Define.EWeaponRangeType.Short;
+    public Define.EWeaponRangeType WeaponType
+    {
+        get { return _weaponType; }
+        set
+        {
+            _weaponType = value;
+            OnChangeWeapon?.Invoke(value);
+            (Managers.UI.SceneUI as UI_GameScene).ChangeSelectedButton(_weaponType);
+        }
+    }
+
+    Define.EWeaponRangeType _disableWeaponRangeType = Define.EWeaponRangeType.None;
+    public Define.EWeaponRangeType DisableWeaponRangeType
+    {
+        get { return _disableWeaponRangeType; }
+        set
+        {
+            _disableWeaponRangeType = value;
+
+            (Managers.UI.SceneUI as UI_GameScene)?.DisableWeaponButton(_disableWeaponRangeType);
+        }
+    }
+
+    public event Action OnPlayerInput;
+    public void PlayerInput()
+    {
+        OnPlayerInput?.Invoke();
+    }
+
+    public event Action OnPlayerAttack;
+
+    public void PlayerAttack()
+    {
+        OnPlayerAttack?.Invoke();
+    }
+
 
     #region Stage
     public int HighestChapter
@@ -128,6 +170,8 @@ public class GameManager
     }
     #endregion
 
+    
+
     public void Init()
     {
         _path = Application.persistentDataPath + "/SaveData.json";
@@ -144,6 +188,13 @@ public class GameManager
 
         IsLoaded = true;
 
+        SaveGame();
+    }
+
+    public void GetStageCoin(int stageReward)
+    {
+        Coin += CurrentStageGetCoin + stageReward;
+        CurrentStageGetCoin = 0;
         SaveGame();
     }
 

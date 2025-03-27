@@ -94,7 +94,19 @@ public class Define
         AntiClockwise,
     }
 
+    public enum EBattleState
+    {
+        Ready,
+        PlayerInput,
+        PlayerAttack,
+        BossAttack,
+        MonsterAttack,
+        GameOver,
+    }
+
     public const int WEAPON_COUNT = 26;
 
     public const int DAILY_QUEST_COUNT = 5;
+
+    public const float RADAR_SPEED = 200f;
 }

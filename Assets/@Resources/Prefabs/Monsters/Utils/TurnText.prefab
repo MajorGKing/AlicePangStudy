@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2179335451949786425}
   - component: {fileID: 2179335451949786426}
   - component: {fileID: 2179335451949786427}
-  - component: {fileID: 2179335451949786429}
   m_Layer: 0
   m_Name: TurnText
   m_TagString: Untagged
@@ -33,7 +32,6 @@ RectTransform:
   m_Children:
   - {fileID: 1454978879538660972}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -174,19 +172,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2179335451949786426}
   m_maskType: 0
---- !u!114 &2179335451949786429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2179335451949786438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bcb49d2935f9f45b53ed773d1b4262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _turnText: {fileID: 2179335451949786427}
 --- !u!1 &5331939104679226132
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +202,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2179335451949786425}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
