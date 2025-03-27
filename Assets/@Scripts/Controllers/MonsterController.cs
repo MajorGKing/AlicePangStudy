@@ -50,19 +50,6 @@ public class MonsterController : BaseController
         }
     }
 
-    int _hp = 0;
-    public int Hp
-    {
-        get { return _hp; }
-        set
-        {
-            _hp = value;
-            if (_statusBar != null && MaxHp > 0)
-            {
-                _statusBar.SetHp(_hp, MaxHp);
-            }
-        }
-    }
 
     StatusBar _statusBar;
 }
