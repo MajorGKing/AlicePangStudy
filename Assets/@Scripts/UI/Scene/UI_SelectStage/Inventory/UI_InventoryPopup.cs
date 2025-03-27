@@ -90,6 +90,16 @@ public class UI_InventoryPopup : UI_Popup
         GetObject((int)GameObjects.BG).SetActive(true);
     }
 
+    public void SetInfo()
+    {
+
+    }
+
+    void RefreshUI()
+    {
+        
+    }
+
     #region EventHandler
     void OnClickCloseButton(PointerEventData evt)
     {

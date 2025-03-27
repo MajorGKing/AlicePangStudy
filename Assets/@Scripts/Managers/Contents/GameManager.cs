@@ -147,6 +147,30 @@ public class GameManager
         SaveGame();
     }
 
+    public bool CheckCoin(int coin)
+	{
+		if (Coin >= coin)
+			return true;
+		else
+			return false;
+	}
+
+	public bool SpendCoin(int coin)
+    {
+		if (CheckCoin(coin))
+		{
+			Coin -= coin;
+
+            if (Managers.UI.SceneUI is UI_SelectStageScene)
+            {
+                (Managers.UI.SceneUI as UI_SelectStageScene).TopUI.RefreshUI();
+            }
+            return true;
+		}
+
+        return false;
+    }
+
 
     #region Save&Load
     public void SaveGame()

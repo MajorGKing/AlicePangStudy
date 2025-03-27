@@ -42,7 +42,7 @@ public class UI_WeaponInventoryItem : UI_SubItem
 
     protected override void Awake()
     {
-        Debug.Log("Awake");
+        Debug.Log("UI_WeaponInventoryItem Awake");
 
         base.Awake();
 
@@ -59,13 +59,13 @@ public class UI_WeaponInventoryItem : UI_SubItem
 
     public void SetInfo(WeaponData weaponData)
     {
-        Debug.Log("Set Info");
+        Debug.Log("UI_WeaponInventoryItem Set Info");
 
         WeaponData = weaponData;
         RefreshUI();
     }
 
-    private void RefreshUI()
+    public void RefreshUI()
     {
         if (_init == false)
             return;
