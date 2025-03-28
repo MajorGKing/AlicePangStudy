@@ -146,12 +146,22 @@ public class UI_GameScene : UI_Scene
         GetText((int)Texts.CoinText).text = coin.ToString();
     }
 
+    public void MonsterDead(int monsterTemplateID, int remainMonster)
+    {
+
+    }
+
     public void ShowWeaponButtons(bool show)
     {
         GetButton((int)Buttons.ShortRangeButton).gameObject.SetActive(show);
         GetButton((int)Buttons.MiddleRangeButton).gameObject.SetActive(show);
         GetButton((int)Buttons.LongRangeButton).gameObject.SetActive(show);
         
+    }
+    bool isShakeMission = false;
+    public void SetTurn(int turn)
+    {
+        // TODO ILHAK
     }
 
     #region EventHandler

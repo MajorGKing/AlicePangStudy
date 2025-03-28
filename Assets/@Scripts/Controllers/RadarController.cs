@@ -28,6 +28,9 @@ public class RadarController : BaseController
 
     public void Refresh()
     {
+        if (_spriteRenderer == null)
+            return;
+
         if (string.IsNullOrEmpty(_spriteKey))
             return;
 

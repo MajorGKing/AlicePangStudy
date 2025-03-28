@@ -191,6 +191,13 @@ public class GameManager
         SaveGame();
     }
 
+    public event Action<MonsterController> OnMonsterDead;
+
+    public void MonsterDead(MonsterController mc)
+    {
+        OnMonsterDead?.Invoke(mc);
+    }
+
     public void GetStageCoin(int stageReward)
     {
         Coin += CurrentStageGetCoin + stageReward;
@@ -222,6 +229,62 @@ public class GameManager
         return false;
     }
 
+    public void CheckBreakStageRecord()
+    {
+        if (SelectedChapter != HighestChapter || SelectedStage != HighestStage)
+            return;
+
+        if (SelectedStage < 20)
+        {
+            SelectedStage++;
+            HighestStage = SelectedStage;
+        }
+        else if (SelectedChapter < 6)
+        {
+            ShowStoryPopup(SelectedChapter);
+            SelectedChapter++;
+            HighestChapter = SelectedChapter;
+            SelectedStage = 1;
+            HighestStage = SelectedStage;
+        }
+        else
+        {
+            ShowStoryPopup(SelectedChapter);
+        }
+        SaveGame();
+    }
+
+    void ShowStoryPopup(int chapter)
+    {
+        if (LastStoryID < chapter)
+        {
+            Managers.UI.ShowPopupUI<UI_StoryPopup>($"UI_StoryPopup{chapter}");
+            LastStoryID = chapter;
+            SaveGame();
+        }
+    }
+
+    public int CurrentWeaponID()
+    {
+        int weaponID = 1;
+
+        switch (WeaponType)
+        {
+            case Define.EWeaponRangeType.Short:
+                weaponID = ShortRangeWeaponID;
+                break;
+
+            case Define.EWeaponRangeType.Middle:
+                weaponID = MiddleRangeWeaponID;
+                break;
+
+            case Define.EWeaponRangeType.Long:
+                weaponID = LongRangeWeaponID;
+                break;
+        }
+
+        return weaponID;
+    }
 
     #region Save&Load
     public void SaveGame()

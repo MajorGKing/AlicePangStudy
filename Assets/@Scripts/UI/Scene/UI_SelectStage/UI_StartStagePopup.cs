@@ -118,7 +118,13 @@ public class UI_StartStagePopup : UI_Popup
     #region EventHandler
     void OnClickStartButton(PointerEventData evt)
     {
-        // TODO ILHAK
+        Managers.Game.SelectedChapter = _stageData.ChapterID;
+        Managers.Game.SelectedStage = _stageData.StageID;
+        Managers.Game.SaveGame();
+        Managers.Scene.LoadScene(Define.EScene.GameScene);
+
+        Managers.Sound.Clear();
+        Managers.Sound.Play(Define.ESound.Effect, "Sound_ButtonSelected");
     }
 
     void OnClickCloseButton(PointerEventData evt)

@@ -104,9 +104,23 @@ public class Define
         GameOver,
     }
 
+    public enum ECreatureState
+    {
+        Idle,
+        Moving,
+        Attack,
+        Dead
+    }
+
+    public const float START_DEGREE = DELTA_DEGREE / 2;
+    public const float DELTA_DEGREE = (2 * Mathf.PI / 24);
+    public const int SLICE_COUNT = 24;
+    public const int LAYER_COUNT = 6;
+    public const float RADAR_SPEED = 200f;
+
     public const int WEAPON_COUNT = 26;
 
     public const int DAILY_QUEST_COUNT = 5;
 
-    public const float RADAR_SPEED = 200f;
+    public const string TEST_ID = "TEST";
 }
