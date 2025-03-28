@@ -118,6 +118,8 @@ public class UI_StartStagePopup : UI_Popup
     #region EventHandler
     void OnClickStartButton(PointerEventData evt)
     {
+        Managers.UI.ClosePopupUI(this);
+
         Managers.Game.SelectedChapter = _stageData.ChapterID;
         Managers.Game.SelectedStage = _stageData.StageID;
         Managers.Game.SaveGame();

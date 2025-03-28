@@ -1,4 +1,5 @@
 using Data;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -63,5 +64,17 @@ public class UI_MissionMonsterItem : UI_Base
         {
             GetImage((int)Images.MonsterIcon).sprite = Managers.Resource.Load<Sprite>(monsterData.SpriteID);
         }
+    }
+
+    public void ShakeImage()
+    {
+        GetImage((int)Images.MonsterIcon).transform.DORotate(Vector3.forward * 2, 0.5f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+        GetImage((int)Images.MonsterIcon).transform.DOScale(Vector3.one * 1.04f, 0.5f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+    }
+
+    public void SetRemainMonsterCount(int remainKillCount)
+    {
+        _remainKillCount = remainKillCount;
+        RefreshUI();
     }
 }

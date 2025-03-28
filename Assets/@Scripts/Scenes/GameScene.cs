@@ -302,6 +302,25 @@ public class GameScene : BaseScene
         Managers.UI.ShowPopupUI<UI_GameOverPopup>();
     }
 
+    public void RestartGame()
+    {
+        if (_currentSequenceCoroutine != null)
+        {
+            StopCoroutine(_currentSequenceCoroutine);
+            _currentSequenceCoroutine = null;
+        }
+
+        Managers.Object.ResetStageObjects();
+
+        OnChangeWeapon(Define.EWeaponRangeType.Short);
+
+        Managers.Object.Player.RevivePlayer();
+
+        StartCoroutine(RespawnMonsters(LAYER_COUNT - 1));
+        State = Define.EBattleState.PlayerInput;
+        Managers.Game.PlayerInput();
+    }
+
     public void RevivePlayer()
     {
         if (_currentSequenceCoroutine != null)

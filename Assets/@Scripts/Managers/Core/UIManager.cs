@@ -139,8 +139,9 @@ public class UIManager
         if (string.IsNullOrEmpty(name))
             name = typeof(T).Name;
 
-        if (_popups.TryGetValue(name, out UI_Popup popup) == false)
+        if (_popups.TryGetValue(name, out UI_Popup popup) == false || popup == null)
         {
+            _popups.Remove(name);
             GameObject go = Managers.Resource.Instantiate(name);
             popup = Utils.GetOrAddComponent<T>(go);
             _popups[name] = popup;

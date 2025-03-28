@@ -63,6 +63,7 @@ public class UI_GameOverPopup : UI_Popup
     void OnClickExitButton(PointerEventData evt)
     {
         Debug.Log("OnExitButton");
+        Managers.UI.ClosePopupUI(this);
         Managers.Scene.LoadScene(Define.EScene.SelectStageScene);
     }
     #endregion
