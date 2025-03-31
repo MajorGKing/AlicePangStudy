@@ -89,6 +89,7 @@ public class Managers : MonoBehaviour
             s_instance = go.GetComponent<Managers>();
             s_instance._sound.Init();
             s_instance._game.Init();
+            s_instance._object.Init();
         }		
 	}
 
@@ -103,5 +104,6 @@ public class Managers : MonoBehaviour
         Scene.Clear();
         UI.Clear();
         Pool.Clear();
+        Object.Clear();
     }
 }

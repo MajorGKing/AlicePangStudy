@@ -35,4 +35,9 @@ public class BossController : BaseController
     {
 
     }
+
+    public void SetInfo(BossData bossData)
+    {
+
+    }
 }
