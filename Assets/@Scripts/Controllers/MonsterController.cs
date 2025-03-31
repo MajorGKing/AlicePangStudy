@@ -1,11 +1,8 @@
 using Data;
 using DG.Tweening;
-using Google.Protobuf.Protocol;
 using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using static Define;
 using Random = UnityEngine.Random;
 using Sequence = DG.Tweening.Sequence;
 
@@ -159,7 +156,7 @@ public class MonsterController : BaseController
         Managers.Sound.Play(Define.ESound.Effect, "Sound_MonsterPop");
     }
 
-        void IdleAnimation()
+    void IdleAnimation()
     {
         IsBusy = false;
 
@@ -217,6 +214,44 @@ public class MonsterController : BaseController
     public void ResetMoveTurn()
     {
         MoveTurnRemaining = _monsterData.MoveTurn;
+    }
+
+    public void StartMonsterTurn()
+    {
+        if (State == Define.ECreatureState.Dead)
+            return;
+
+        MoveTurnRemaining = Math.Max(0, MoveTurnRemaining - 1);
+
+        if (CanMove())
+        {
+
+            if (CanAttack())
+            {
+                State = Define.ECreatureState.Attack;
+                return;
+            }
+            else
+            {
+                int moveIndex = Managers.Object.TryMoveForward(this, _monsterData.MoveSpeed);
+                if (moveIndex != -1)
+                {
+                    State = Define.ECreatureState.Moving;
+                    IsBusy = true;
+                    SetFlip();
+                    SetDestination(Managers.Object.Pos[moveIndex]);
+                }
+                else
+                {
+                    IsBusy = false;
+                    ResetMoveTurn();
+                }
+            }
+        }
+        else
+        {
+            IsBusy = false;
+        }
     }
 
     public IEnumerator StartMonsterAttack()
@@ -326,9 +361,154 @@ public class MonsterController : BaseController
         transform.position += _dieMoveDir * _dieMoveSpeed * Time.deltaTime;
     }
 
+    public void SetDestination(Vector3 dest)
+    {
+        _dest = new Vector3(dest.x, dest.y, dest.y * Random.Range(0.99f, 1.01f));
+
+        transformSeq = DOTween.Sequence();
+
+
+        transformSeq.AppendInterval(Random.Range(0f, 0.3f));
+        transformSeq.Append(transform.DOJump(_dest, 0.8f, 1, 0.2f));
+    }
+
+    public float GetDistance(Vector2 origin)
+    {
+        Vector2 pos = new Vector2(transform.position.x, transform.position.y);
+        return (pos - origin).magnitude;
+    }
+
     public void SetPos(Vector3 pos)
     {
         transform.position = new Vector3(pos.x, pos.y, pos.y * Random.Range(0.99f, 1.01f));
+    }
+
+    public void OnDamaged(PlayerController pc, Vector3 attackDir)
+    {
+        if (State == Define.ECreatureState.Dead)
+            return;
+
+        _hitEffect.Play();
+        ChangeDamagedSprite();
+
+        CancelInvoke();
+
+        Invoke("ChangeNormalSprite", 0.5f);
+        int damage = pc.Damage * pc.ComboCount;
+        Managers.Object.ShowDamageText(transform.position, damage);
+        Managers.Object.Camera.CameraAnimation("CamAction");
+
+        Hp = Math.Max(0, Hp - damage);
+        if (Hp <= 0)
+            OnDead(attackDir);
+        else
+            Knockback();
+    }
+
+    public void OnDamaged(MonsterController mc, Vector2 attackDir)
+    {
+        if (State == Define.ECreatureState.Dead)
+            return;
+        _hitEffect.Play();
+        ChangeDamagedSprite();
+
+        Invoke("ChangeNormalSprite", 0.3f);
+
+        Managers.Object.ShowDamageText(transform.position, mc.Damage);
+
+        Hp = Math.Max(0, Hp - mc.Damage);
+        if (Hp <= 0)
+            OnDead(attackDir);
+    }
+
+    void OnDead(Vector2 attackDir)
+    {
+        _dieMoveDir = attackDir;
+        State = Define.ECreatureState.Dead;
+
+        Managers.Game.CurrentStageGetCoin = Managers.Game.CurrentStageGetCoin + _monsterData.DropCoin;
+        Managers.Object.DropCoin(transform.position, _monsterData.DropCoin);
+
+        transformSeq = DOTween.Sequence();
+        transformSeq.Append(transform.DORotate(Vector3.forward * 720f, 0.5f, RotateMode.FastBeyond360));
+    }
+    
+    void OnDead()
+    {
+        State = Define.ECreatureState.Dead;
+    }
+
+    void Knockback()
+    {
+        int knockbackIndex;
+        switch (Managers.Object.Player.Knockback)
+        {
+            case Define.EKnockbackDirection.Front:
+                knockbackIndex = Managers.Object.TryMoveForward(this);
+                break;
+
+            case Define.EKnockbackDirection.Back:
+                knockbackIndex = Managers.Object.TryMoveBackward(this);
+                break;
+
+            case Define.EKnockbackDirection.Clockwise:
+                knockbackIndex = Managers.Object.TryMoveClockwise(this, true);
+                break;
+
+            case Define.EKnockbackDirection.AntiClockwise:
+                knockbackIndex = Managers.Object.TryMoveClockwise(this, false);
+                break;
+
+            default:
+                knockbackIndex = -1;
+                break;
+        }
+
+        if (knockbackIndex == -1)
+        {
+            transformSeq = DOTween.Sequence();
+
+            _dest = transform.position;
+            Vector3 attackDir = transform.position.normalized;
+
+            transformSeq.Append(transform.DOMove(_dest + attackDir * 2, 0.1f));
+            transformSeq.Append(transform.DOMove(_dest, 0.1f));
+            State = Define.ECreatureState.Moving;
+        }
+        else if (Managers.Object.Monsters[knockbackIndex] == this)
+        {
+            transformSeq = DOTween.Sequence();
+
+            _dest = Managers.Object.Pos[knockbackIndex] + Random.Range(-0.01f, 0.01f) * Vector3.forward;
+            Vector3 attackDir = (_dest - transform.position).normalized;
+
+            transformSeq.Append(transform.DOMove(_dest + attackDir * 2, 0.1f));
+            transformSeq.Append(transform.DOMove(_dest, 0.1f));
+            State = Define.ECreatureState.Moving;
+        }
+        else
+        {
+            transformSeq = DOTween.Sequence();
+            transformSeq.Append(transform.DOMove(Managers.Object.Monsters[knockbackIndex].transform.position, 0.2f).OnComplete(() => HitKnockbackDamage(knockbackIndex)));
+            transformSeq.Append(transform.DOMove(Managers.Object.Monsters[CellIndex].transform.position, 0.2f));
+        }
+    }
+
+    void HitKnockbackDamage(int collisionMonsterIndex)
+    {
+        Vector2 attackDir = (Managers.Object.Monsters[collisionMonsterIndex].transform.position - transform.position).normalized;
+
+        Managers.Object.Monsters[collisionMonsterIndex].OnDamaged(this, attackDir);
+    }
+
+    void ChangeDamagedSprite()
+    {
+        _spriteRenderer.sprite = _damagedSprite;
+
+        colorSeq = DOTween.Sequence();
+
+        colorSeq.Append(_spriteRenderer.DOColor(_damagedColor, 0.3f).SetLoops(1, LoopType.Restart));
+        colorSeq.Append(_spriteRenderer.DOColor(Color.white, 0.2f));
     }
 
     void ChangeAttackSprite()
@@ -339,14 +519,6 @@ public class MonsterController : BaseController
     void ChangeNormalSprite()
     {
         _spriteRenderer.sprite = _normalSprite;
-    }
-
-
-    void OnDead()
-    {
-        State = Define.ECreatureState.Dead;
-
-        //Managers.Object.CountRemainMonster(this);
     }
 
     private void OnDisable()
@@ -366,17 +538,6 @@ public class MonsterController : BaseController
     void OnTriggerExit2D(Collider2D collision)
     {
         Selected = false;
-    }
-
-    public void StartMonsterTurn()
-    {
-
-    }
-
-    public float GetDistance(Vector2 origin)
-    {
-        Vector2 pos = new Vector2(transform.position.x, transform.position.y);
-        return (pos - origin).magnitude;
     }
 
     void SetFlip()
