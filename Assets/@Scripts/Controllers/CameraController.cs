@@ -10,6 +10,8 @@ public class CameraController : BaseController
     private void Awake()
     {
         SetCameraSize();
+
+        _tweenAnimation = transform.GetComponent<DOTweenAnimation>();
     }
 
     void SetCameraSize()
