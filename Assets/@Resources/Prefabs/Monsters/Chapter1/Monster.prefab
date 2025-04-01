@@ -97,6 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cded30202e31440a9db79eda00ea4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damagedColor: {r: 1, g: 0.874, b: 0.874, a: 1}
+  _shadow: {fileID: 3612674827205450749}
+  _redShadow: {fileID: 6440663302079495547}
+  _selectedMark: {fileID: 3316800423021386432}
+  _hitEffect: {fileID: 547535020335439239}
 --- !u!1 &3093531759022365607
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +468,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1927646781944621307, guid: 396c8afd413b0884da2e17d3ff3dcf95, type: 3}
   m_PrefabInstance: {fileID: 1500320428333453117}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3316800423021386432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4239454132229756413, guid: 396c8afd413b0884da2e17d3ff3dcf95, type: 3}
+  m_PrefabInstance: {fileID: 1500320428333453117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1905748673534733419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -527,6 +537,11 @@ PrefabInstance:
 --- !u!4 &547535020335439237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2156001983207289326, guid: 95a1543d3f2cc47438a50819555093bd, type: 3}
+  m_PrefabInstance: {fileID: 1905748673534733419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &547535020335439239 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2156001983207289324, guid: 95a1543d3f2cc47438a50819555093bd, type: 3}
   m_PrefabInstance: {fileID: 1905748673534733419}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3682723601127101802

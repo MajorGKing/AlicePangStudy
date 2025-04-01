@@ -62,6 +62,7 @@ public class MonsterController : BaseController
             _hp = value;
             if (_statusBar != null && MaxHp > 0)
             {
+                Debug.Log("Hp : " + _hp);
                 _statusBar.SetHp(_hp, MaxHp);
             }
         }
@@ -127,7 +128,7 @@ public class MonsterController : BaseController
         }
     }
 
-    private void Awake()
+    protected override void Awake()
     {
         Selected = false;
 
@@ -136,7 +137,7 @@ public class MonsterController : BaseController
         _spriteRenderer = Utils.GetOrAddComponent<SpriteRenderer>(Utils.FindChild(gameObject, "MonsterSprite"));
         _spriteRenderer.sprite = _normalSprite;
 
-        ResetMoveTurn();
+        //ResetMoveTurn();
         Hp = MaxHp;
 
         SetFlip();
@@ -167,8 +168,9 @@ public class MonsterController : BaseController
     {
         _monsterData = monsterData;
 
-        Hp = monsterData.Hp;
         MaxHp = monsterData.Hp;
+        Hp = monsterData.Hp;
+        
         TemplateID = monsterData.TemplateID;
 
         switch (monsterData.SpecialAbility)

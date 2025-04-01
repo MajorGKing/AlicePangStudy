@@ -13,7 +13,7 @@ public class RadarController : BaseController
     Sequence _seq;
     bool _isStop = false;
 
-    protected void Awake()
+    protected override void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _collider2D = GetComponent<PolygonCollider2D>();
@@ -36,6 +36,7 @@ public class RadarController : BaseController
 
         _spriteRenderer.sprite = null;
         _spriteRenderer.sprite = Managers.Resource.Load<Sprite>(_spriteKey);
+        _collider2D.TryUpdateShapeToAttachedSprite();
     }
 
     private void Update()
