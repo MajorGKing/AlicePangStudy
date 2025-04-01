@@ -7,6 +7,10 @@ using Event = Spine.Event;
 
 public class BaseController : MonoBehaviour
 {
-
+    protected bool _init = false;
+    protected virtual void Awake()
+    {
+        _init = true;
+    }
 }
 
