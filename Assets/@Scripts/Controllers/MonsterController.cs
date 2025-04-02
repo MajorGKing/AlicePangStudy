@@ -62,7 +62,6 @@ public class MonsterController : BaseController
             _hp = value;
             if (_statusBar != null && MaxHp > 0)
             {
-                Debug.Log("Hp : " + _hp);
                 _statusBar.SetHp(_hp, MaxHp);
             }
         }

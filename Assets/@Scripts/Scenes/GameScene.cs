@@ -209,6 +209,7 @@ public class GameScene : BaseScene
         {
             int killReward = Managers.Game.CurrentStageGetCoin;
             var popup = Managers.UI.ShowPopupUI<UI_GameClearPopup>();
+            popup.SetInfo(killReward, _stageData.ClearGoldReward, _stageData.StageID);
             State = Define.EBattleState.GameOver;
 
             Managers.Game.GetStageCoin(_stageData.ClearGoldReward);
