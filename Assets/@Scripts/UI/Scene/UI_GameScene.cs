@@ -234,23 +234,25 @@ public class UI_GameScene : UI_Scene
     {
         if (comboCount < 2)
             GetText((int)Texts.ComboText).text = string.Empty;
-        else if (comboCount >= 100)
-        {
-            int digit100 = comboCount / 100;
-            int digit10 = (comboCount - digit100) / 10;
-            int digit1 = comboCount % 10;
-            GetText((int)Texts.ComboText).text = $"<sprite=11><sprite=12><sprite=13><sprite=14><sprite=12><sprite=10><sprite={digit100}><sprite={digit10}><sprite={digit1}>";
-        }
-        else if (comboCount >= 10)
-        {
-            int digit10 = comboCount / 10;
-            int digit1 = comboCount % 10;
-            GetText((int)Texts.ComboText).text = $"<sprite=11><sprite=12><sprite=13><sprite=14><sprite=12><sprite=10><sprite={digit10}><sprite={digit1}>";
-        }
         else
-        {
-            GetText((int)Texts.ComboText).text = $"<sprite=11><sprite=12><sprite=13><sprite=14><sprite=12><sprite=10><sprite={comboCount}>";
-        }
+            GetText((int)Texts.ComboText).text = "Combo" + comboCount;
+        //else if (comboCount >= 100)
+        //{
+        //    int digit100 = comboCount / 100;
+        //    int digit10 = (comboCount - digit100) / 10;
+        //    int digit1 = comboCount % 10;
+        //    GetText((int)Texts.ComboText).text = $"<sprite=11><sprite=12><sprite=13><sprite=14><sprite=12><sprite=10><sprite={digit100}><sprite={digit10}><sprite={digit1}>";
+        //}
+        //else if (comboCount >= 10)
+        //{
+        //    int digit10 = comboCount / 10;
+        //    int digit1 = comboCount % 10;
+        //    GetText((int)Texts.ComboText).text = $"<sprite=11><sprite=12><sprite=13><sprite=14><sprite=12><sprite=10><sprite={digit10}><sprite={digit1}>";
+        //}
+        //else
+        //{
+        //    GetText((int)Texts.ComboText).text = $"<sprite=11><sprite=12><sprite=13><sprite=14><sprite=12><sprite=10><sprite={comboCount}>";
+        //}
     }
 
     public void SetCoinText(int coin)
